@@ -1,9 +1,12 @@
-import "./Home.css"
+import "./Home.css";
+import NavBar from "../NavBar/NavBar";
 
 const Home = () => {
   return (
-    <div>Home</div>
-  )
-}
+    <>
+      <NavBar />
+    </>
+  );
+};
 
-export default Home
+export default Home;
