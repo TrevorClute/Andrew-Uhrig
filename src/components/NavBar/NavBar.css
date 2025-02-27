@@ -3,26 +3,28 @@
   position: fixed;
   align-items: center;
   top: 0;
-  left:0;
+  left: 0;
   width: 100vw;
   background-color: #111111;
   color: white;
   min-height: 70px;
   height: 8vh;
-  font-family: 'Courier New', Courier, monospace;
+  font-family: "Courier New", Courier, monospace;
   font-size: 1.4rem;
   gap: 3px;
 }
-.item{
-  text-align:center;
+
+.item {
+  text-align: center;
   display: flex;
   align-items: center;
   justify-content: center;
   flex: 1;
   height: 100%;
-  transition: all 0.5s ;
+  transition: all 0.5s;
 }
-.item:hover{
+
+.item:hover {
   background-color: #1f1f1f;
   transform: translate(-5%, 5%);
 }
