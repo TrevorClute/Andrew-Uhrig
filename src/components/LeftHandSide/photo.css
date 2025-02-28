@@ -1,0 +1,15 @@
+/* photo.css */
+.photo-container {
+    display: flex;
+    justify-content: flex-start; 
+    align-items: flex-start; 
+    height: 100vh;
+  }
+  
+  .photo-container img {
+    width: 300px; 
+    height: auto; 
+    margin-top: 60px;
+  }
+
+  
