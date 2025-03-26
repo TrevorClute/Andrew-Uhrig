@@ -1,2 +1,14 @@
+<<<<<<< HEAD
 @import "tailwindcss"
 
+=======
+@import "tailwindcss";
+
+
+* {
+  font-family: "Roboto Flex", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: normal;
+  font-style: normal;
+}
+>>>>>>> f2da03e9cb29f855bfc7cd77914650f5ab60297e

@@ -1,30 +1,29 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import Photo_1 from "../../assets/Photo_1.jpg";
 import Photo_2 from "../../assets/Photo_2.jpg";
 import Photo_3 from "../../assets/Photo_3.jpg";
 const Picture = () => {
-  // State to keep track of the current image
   const [currentImage, setCurrentImage] = useState(0);
-  const images = [Photo_1, Photo_2, Photo_3]
+  const images = [Photo_1, Photo_2, Photo_3] //all photos that can be rotated through
 
-  // Function for the left arrow click
+  //function handles when the user clicks on the left arrow
   const handleLeftClick = () => {
     setCurrentImage((prev)=>{
         if(prev === images.length - 1){
             return 0
         }
         return prev + 1
-    }); // Change to the first image
+    }); //updates image
   };
 
-  // Function for the right arrow click
+  //function handles when the user clicks on the right arrow
   const handleRightClick = () => {
     setCurrentImage((prev)=>{
         if(prev === images.length - 1){
             return 0
         }
         return prev + 1
-    }); // Change to the second image
+    }); //updates image
   };
 
   return (
