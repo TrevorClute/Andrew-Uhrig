@@ -1,26 +1,21 @@
-import "./NavBar.css";
-import { useState } from "react";
-import PhotoDropDown from "./PhotoDropDown/PhotoDropDown";
+import PhotoDropDown from "../PhotoDropDown/PhotoDropDown";
 
 const NavBar = () => {
-  const [isPhotoDropDownOpen, setIsPhotoDropDownOpen] = useState(false);
+  const item = "flex-1 h-[100%] flex justify-center items-center";
   return (
     <>
-      <div className="container">
-        <div className="item"></div>
-        <div className="item"></div>
+      <div className="fixed flex h-[7vh] min-h-[50px] w-[100vw] bottom-0 sm:top-0">
         <div
-          className="item"
-          onClick={() => {
-            console.log(isPhotoDropDownOpen)
-            setIsPhotoDropDownOpen((prev) => !prev);
-          }}
+          className="flex-1 bg-[#000000] text-[white] rounded flex items-center justify-center
+          sm:m-[4px] 
+          m-[4px] mb-[8px]"
         >
-          PHOTOGRAPHY &#x25BC;
+          <div className={item}>help</div>
+          <div className={item}></div>
+          <PhotoDropDown />
+          <div className={item}>CONTACT</div>
         </div>
-        <div className="item">CONTACT</div>
       </div>
-      {isPhotoDropDownOpen ? <PhotoDropDown /> : <></>}
     </>
   );
 };

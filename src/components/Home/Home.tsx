@@ -1,11 +1,14 @@
-import "./Home.css";
 import NavBar from "../NavBar/NavBar";
-import Photo from "../LeftHandSide/photo.tsx"
+//import Signature from "../Signature/Andrew_uhrig"
+import Picture from "../Pictures/photo"
+//import Left_Button from "../Pictures/left_button";
+//import Right_Button from "../Pictures/right_button";
 const Home = () => {
   return (
     <>
+
+      <Picture />
       <NavBar />
-      <Photo />
     </>
   );
 };
