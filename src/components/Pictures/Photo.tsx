@@ -6,13 +6,14 @@ import Photo_3 from "../../assets/Photo_3.jpg";
 const Picture = () => {
   const [currentImage, setCurrentImage] = useState(0);
   const images = [Photo_1, Photo_2, Photo_3];
+  const length = images.length; // Total number of photos
 
   const handleLeftClick = () => {
-    setCurrentImage((prev) => (prev === 0 ? images.length - 1 : prev - 1));
+    setCurrentImage((prev) => (prev > 0 ? prev - 1 : prev)); // Prevent going below 0
   };
 
   const handleRightClick = () => {
-    setCurrentImage((prev) => (prev === images.length - 1 ? 0 : prev + 1));
+    setCurrentImage((prev) => (prev < length - 1 ? prev + 1 : prev)); // Prevent exceeding max index
   };
 
   return (
