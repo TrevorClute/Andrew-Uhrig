@@ -29,7 +29,7 @@ const Picture = () => {
         {currentImage > 0 && (
           <div
             onClick={handleLeftClick}
-            className="absolute left-0 top-[45%] transform -translate-y-1/2 bg-gray-300 rounded-lg px-4 py-2 flex items-center justify-center opacity-75 cursor-pointer"
+            className="absolute left-5 top-[45%] transform -translate-y-1/2 bg-gray-300 rounded-lg px-4 py-2 flex items-center justify-center opacity-75 cursor-pointer"
           >
             <p className="text-2xl font-bold text-black opacity-90">&larr;</p>
           </div>
@@ -46,7 +46,7 @@ const Picture = () => {
         {currentImage < length - 1 && (
           <div
             onClick={handleRightClick}
-            className="absolute right-0 top-[45%] transform -translate-y-1/2 bg-gray-300 rounded-lg px-4 py-2 flex items-center justify-center opacity-75 cursor-pointer"
+            className="absolute right-5 top-[45%] transform -translate-y-1/2 bg-gray-300 rounded-lg px-4 py-2 flex items-center justify-center opacity-75 cursor-pointer"
           >
             <p className="text-2xl font-bold text-black">&rarr;</p>
           </div>
